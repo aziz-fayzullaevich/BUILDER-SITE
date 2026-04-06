@@ -125,7 +125,7 @@ export const CreateSites = () => {
                         border: viewMode === 'mobile' ? '3px solid gray' : 'transparent',
                         borderRadius: viewMode === 'mobile' ? '20px' : '0',
                         transition: 'all 0.3s ease',
-                        overflow: 'hidden',
+                        overflow: 'auto',
                         display: 'flex',
                         flexDirection: 'column'
                     }}

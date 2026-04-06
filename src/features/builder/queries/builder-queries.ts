@@ -1,15 +1,8 @@
-import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
+import { useMutation, useQueryClient } from "@tanstack/react-query"
 import { builderApi } from "../api/builder-api"
 import { notifications } from "@mantine/notifications";
 
 export const builderQueries = {
-    useGet: () => {
-        return useQuery({
-            queryKey: ['builder-data'],
-            queryFn: builderApi.get,
-        });
-    },
-
     useSave: () => {
         const queryClient = useQueryClient();
 

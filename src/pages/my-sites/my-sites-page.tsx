@@ -1,7 +1,5 @@
-const MySitesPage = () => {
-  return (
-    <div>MySitesPage</div>
-  )
-}
+import { MySites } from "../../features/my-sites/ui/my-sites";
+
+const MySitesPage = () => <MySites />
 
 export default MySitesPage;
