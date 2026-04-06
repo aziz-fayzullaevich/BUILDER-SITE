@@ -31,7 +31,7 @@ export const RenderElement = ({ element }: { element: BuilderElement }) => {
         outlineOffset: '2px',
         cursor: 'pointer',
         position: 'relative',
-        transition: 'outline 0.2s ease'
+        transition: 'outline 0.2s ease',
       }}
     >
       {isSelected && (
@@ -45,9 +45,9 @@ export const RenderElement = ({ element }: { element: BuilderElement }) => {
           }}
           style={{
             position: 'absolute',
-            right: -10,
+            right: 0,
             top: -10,
-            zIndex: 100,
+            zIndex: 111,
             borderRadius: '50%'
           }}
         >

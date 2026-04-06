@@ -119,10 +119,11 @@ export const CreateSites = () => {
                     }}
                     style={{
                         width: viewMode === 'mobile' ? '450px' : '100%',
-                        height: 'fit-content',
+                        height: viewMode === 'mobile' ? '80vh' : '100%',
                         marginTop: viewMode === 'mobile' ? '20px' : '0',
                         marginBottom: viewMode === 'mobile' ? '20px' : '0',
-                        borderRadius: viewMode === 'mobile' ? '16px' : '0',
+                        border: viewMode === 'mobile' ? '3px solid gray' : 'transparent',
+                        borderRadius: viewMode === 'mobile' ? '20px' : '0',
                         transition: 'all 0.3s ease',
                         overflow: 'hidden',
                         display: 'flex',

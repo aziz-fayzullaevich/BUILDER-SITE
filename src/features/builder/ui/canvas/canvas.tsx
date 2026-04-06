@@ -14,7 +14,7 @@ export const Canvas = () => {
   }
 
   return (
-    <Stack gap="md" align="stretch">
+    <Stack gap="md" align="stretch" p={'lg'}>
       {elements.map((element) => (
         <RenderElement key={element.id} element={element} />
       ))}
